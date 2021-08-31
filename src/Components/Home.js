@@ -9,7 +9,6 @@ import {
   CardContent,
   CardActionArea,
   CssBaseline,
-  Button,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CakeIcon from "@material-ui/icons/Cake";
@@ -17,7 +16,8 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import HomeIcon from "@material-ui/icons/Home";
 import { SocialIcon } from "react-social-icons";
-import { Link } from "react-router-dom";
+import GaneshPic from '../img/ganesh.png'
+
 
 export default function Home() {
   const useStyle = makeStyles((theme) => ({
@@ -28,11 +28,12 @@ export default function Home() {
     AppBar: {
       backgroundColor: "#F96D15",
       width: "100%",
-      height: "8%",
+      height: "10%",
     },
     AppBarName: {
-      fontSize: "24px",
+      fontSize: "20px",
       fontWeight: "bold",
+      padding:theme.spacing(2)
     },
     MenuIcon: {
       display: "block",
@@ -74,7 +75,7 @@ export default function Home() {
         <AppBar className={classes.AppBar}>
           <Toolbar>
             <Typography className={classes.AppBarName}>JDEV</Typography>
-            <MenuIcon className={classes.MenuIcon} />
+            {/* <MenuIcon className={classes.MenuIcon} /> */}
           </Toolbar>
         </AppBar>
         <Card className={classes.cardImageRoot}>
@@ -82,7 +83,7 @@ export default function Home() {
             <CardMedia
               component="img"
               alt="Ganesh JDev"
-              image="https://avatars.githubusercontent.com/u/51211116?v=4"
+              image={GaneshPic}
             />
           </CardActionArea>
           <CardContent>
