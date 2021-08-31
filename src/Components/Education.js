@@ -16,6 +16,7 @@ import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "6px 16px",
+    
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,

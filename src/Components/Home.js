@@ -9,6 +9,8 @@ import {
   CardContent,
   CardActionArea,
   CssBaseline,
+  Grid,
+  Paper,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import CakeIcon from "@material-ui/icons/Cake";
@@ -16,8 +18,7 @@ import PhoneIcon from "@material-ui/icons/Phone";
 import MailIcon from "@material-ui/icons/Mail";
 import HomeIcon from "@material-ui/icons/Home";
 import { SocialIcon } from "react-social-icons";
-import GaneshPic from '../img/ganesh.png'
-
+import GaneshPic from "../img/ganesh.png";
 
 export default function Home() {
   const useStyle = makeStyles((theme) => ({
@@ -27,13 +28,11 @@ export default function Home() {
     },
     AppBar: {
       backgroundColor: "#F96D15",
-      width: "100%",
-      height: "10%",
     },
     AppBarName: {
       fontSize: "20px",
       fontWeight: "bold",
-      padding:theme.spacing(2)
+      padding: theme.spacing(2),
     },
     MenuIcon: {
       display: "block",
@@ -43,8 +42,11 @@ export default function Home() {
       textAlign: "center",
       padding: theme.spacing(0.4),
     },
-  
-    
+    details: {
+      justify: "center",
+      alignItems: "center",
+      padding: theme.spacing(2),
+    },
     cardImageRoot: {
       [theme.breakpoints.down("md")]: {
         width: "80%",
@@ -61,17 +63,24 @@ export default function Home() {
         marginTop: theme.spacing(13),
       },
     },
-    
   }));
 
-  
+  const link = [
+    "https://twitter.com/Ganesh_jdev",
+    "https://www.youtube.com/c/GaneshJDev",
+    "https://www.instagram.com/mb_ga.ne.sh_dev/",
+    "https://www.linkedin.com/in/ganesh-jdev/",
+    "https://github.com/mbganesh",
+    "https://www.facebook.com/ganesh.jdev",
+    "https://wa.me/+918838531474",
+  ];
 
   const classes = useStyle();
-  
+
   return (
     <>
       <div className={classes.rootBg}>
-      <CssBaseline />
+        <CssBaseline />
         <AppBar className={classes.AppBar}>
           <Toolbar>
             <Typography className={classes.AppBarName}>JDEV</Typography>
@@ -80,11 +89,7 @@ export default function Home() {
         </AppBar>
         <Card className={classes.cardImageRoot}>
           <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Ganesh JDev"
-              image={GaneshPic}
-            />
+            <CardMedia component="img" alt="Ganesh JDev" image={GaneshPic} />
           </CardActionArea>
           <CardContent>
             <Typography
@@ -101,40 +106,55 @@ export default function Home() {
               variant="h5"
               component="h2"
             >
-              Ganesh JDev
+              BoothaGanesh!!!
             </Typography>
           </CardContent>
         </Card>
 
-        <Typography>
-          <CakeIcon /> 17-SEP-2000
-        </Typography>
-        <Typography>
-          <PhoneIcon /> +91 8489991253{" "}
-        </Typography>
-        <Typography>
-        <MailIcon />
-        <a href="mailto:mbganesh.jdev@gmail.com" style={{color:'black' , textDecorationLine:'none',}}>
-          mbganesh.jdev@gmail.com
-          </a>
-        </Typography>
-    
-        <Typography>
-          <HomeIcon />
-          Tirunelveli,Tamilnadu
-        </Typography>
+        <div className={classes.details}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Typography>
+              <CakeIcon style={{ verticalAlign: "sub" }} /> 21 years old
+            </Typography>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Typography>
+              <PhoneIcon style={{ verticalAlign: "sub" }} /> +91 8489991253{" "}
+            </Typography>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Typography>
+              <MailIcon style={{ verticalAlign: "sub" }} />
+              <a
+                href="mailto:mbganesh.jdev@gmail.com"
+                style={{ color: "black", textDecorationLine: "none" }}
+              >
+                mbganesh.jdev@gmail.com
+              </a>
+            </Typography>
+          </div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Typography>
+              <HomeIcon style={{ verticalAlign: "sub" }} />
+              Tirunelveli,Tamilnadu
+            </Typography>
+          </div>
+        </div>
 
-        <SocialIcon  url="https://twitter.com/Ganesh_jdev" />
-      <SocialIcon url="https://www.instagram.com/mb_ga.ne.sh_dev/"/>
-      <SocialIcon url="https://www.youtube.com/c/GaneshJDev"/>
-      <SocialIcon url="https://www.linkedin.com/in/ganesh-jdev/"/>
-      <SocialIcon url="https://github.com/mbganesh"/>
-      <SocialIcon url="https://www.facebook.com/ganesh.jdev"/>
-      <SocialIcon url="https://api.whatsapp.com/send/?phone=8838531474&text&app_absent=0"/>
+        <div>
+          <Grid container className={classes.root} spacing={2}>
+            <Grid item xs={12}>
+              <Grid container justify="center" spacing={5}>
+                {link.map((value) => (
+                  <Grid key={value} item>
+                    <SocialIcon url={value} />
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        </div>
       </div>
-      
     </>
   );
 }
-
-

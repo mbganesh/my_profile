@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(1),
     },
     [theme.breakpoints.up("md")]: {
-      width: "40%",
+      width: "30%",
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",

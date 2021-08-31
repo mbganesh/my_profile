@@ -12,6 +12,8 @@ import { makeStyles, Typography, Paper } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "6px 16px",
+    flexWrap:'wrap',
+    
   },
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
@@ -48,7 +50,7 @@ function Experience() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Paper elevation={3} className={classes.paper}>
+            <Paper elevation={3} className={classes.paper} >
               <Typography variant="h6" component="h1">
                 Netcom Computer Pvt Ltd
               </Typography>
