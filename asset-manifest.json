@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.js": "/my_profile/static/js/main.f41fd75f.chunk.js",
-    "main.js.map": "/my_profile/static/js/main.f41fd75f.chunk.js.map",
-    "runtime-main.js": "/my_profile/static/js/runtime-main.b28fead9.js",
-    "runtime-main.js.map": "/my_profile/static/js/runtime-main.b28fead9.js.map",
+    "main.css": "/my_profile/static/css/main.6626d952.chunk.css",
+    "main.js": "/my_profile/static/js/main.00369d43.chunk.js",
+    "main.js.map": "/my_profile/static/js/main.00369d43.chunk.js.map",
+    "runtime-main.js": "/my_profile/static/js/runtime-main.2eb43d8c.js",
+    "runtime-main.js.map": "/my_profile/static/js/runtime-main.2eb43d8c.js.map",
     "static/css/2.ed1298f3.chunk.css": "/my_profile/static/css/2.ed1298f3.chunk.css",
-    "static/js/2.1cbc16e2.chunk.js": "/my_profile/static/js/2.1cbc16e2.chunk.js",
-    "static/js/2.1cbc16e2.chunk.js.map": "/my_profile/static/js/2.1cbc16e2.chunk.js.map",
-    "static/js/3.fb2e82dc.chunk.js": "/my_profile/static/js/3.fb2e82dc.chunk.js",
-    "static/js/3.fb2e82dc.chunk.js.map": "/my_profile/static/js/3.fb2e82dc.chunk.js.map",
+    "static/js/2.de9a6303.chunk.js": "/my_profile/static/js/2.de9a6303.chunk.js",
+    "static/js/2.de9a6303.chunk.js.map": "/my_profile/static/js/2.de9a6303.chunk.js.map",
+    "static/js/3.763ca001.chunk.js": "/my_profile/static/js/3.763ca001.chunk.js",
+    "static/js/3.763ca001.chunk.js.map": "/my_profile/static/js/3.763ca001.chunk.js.map",
     "index.html": "/my_profile/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/my_profile/static/css/2.ed1298f3.chunk.css.map",
-    "static/js/2.1cbc16e2.chunk.js.LICENSE.txt": "/my_profile/static/js/2.1cbc16e2.chunk.js.LICENSE.txt",
+    "static/css/main.6626d952.chunk.css.map": "/my_profile/static/css/main.6626d952.chunk.css.map",
+    "static/js/2.de9a6303.chunk.js.LICENSE.txt": "/my_profile/static/js/2.de9a6303.chunk.js.LICENSE.txt",
     "static/media/BoothaGanesh_Resume.53e98597.pdf": "/my_profile/static/media/BoothaGanesh_Resume.53e98597.pdf",
     "static/media/ganesh.0e10f136.png": "/my_profile/static/media/ganesh.0e10f136.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b28fead9.js",
+    "static/js/runtime-main.2eb43d8c.js",
     "static/css/2.ed1298f3.chunk.css",
-    "static/js/2.1cbc16e2.chunk.js",
-    "static/js/main.f41fd75f.chunk.js"
+    "static/js/2.de9a6303.chunk.js",
+    "static/css/main.6626d952.chunk.css",
+    "static/js/main.00369d43.chunk.js"
   ]
 }
